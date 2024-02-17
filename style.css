@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+input, button {
+    margin: 10px 0;
+    padding: 10px;
+}
+
+
+#urlsContainer {
+    margin-top: 20px;
+}
+#urlsContainer div {
+    margin-bottom: 5px;
+    padding: 5px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+}
+#loadingBarContainer {
+    width: 100%;
+    background-color: #ddd;
+}
+
+#loadingBar {
+    height: 20px;
+    width: 0%;
+    background-color: #4CAF50;
+}
+
+.loader {
+    border: 16px solid #f3f3f3; /* Light grey background */
+    border-top: 16px solid #3498db; /* Blue color */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+    display: none; /* Hide spinner initially */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -60px 0 0 -60px; /* Offset to center the spinner */
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.loader {
+    border: 16px solid #f3f3f3; /* Light grey */
+    border-top: 16px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+
+
