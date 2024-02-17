@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Competitor Sitemap Fetcher</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to your CSS styling -->
+</head>
+<body>
+    <h1>Competitor Sitemap Fetcher</h1>
+    <input type="text" id="sitemapUrl" placeholder="Enter sitemap URL">
+    <button onclick="fetchSitemap()">Fetch Sitemap</button>
+    <button id="downloadUrls" onclick="downloadUrls()">Download URLs</button>
+    <button id="formatUrlsButton" onclick="formatUrls()">Format URLs</button>
+
+    <!-- Inside your body tag -->
+
+
+<!-- Spinner Container -->
+<div id="spinner" style="display: none;">
+    <div class="loader"></div>
+</div>
+
+    <div id="urlsContainer"></div>
+
+
+
+    <script src="script.js"></script> <!-- Link to your JS script -->
+</body>
+</html>
