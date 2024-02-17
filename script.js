@@ -72,7 +72,8 @@
 
 async function fetchSitemap() {
     const sitemapUrl = document.getElementById('sitemapUrl').value;
-    const apiUrl = `http://localhost:5501/fetch-sitemap?url=${encodeURIComponent(sitemapUrl)}`;
+    // const apiUrl = `http://localhost:5501/fetch-sitemap?url=${encodeURIComponent(sitemapUrl)}`;
+    const apiUrl = `https://sitemap-checker-maj.netlify.app//fetch-sitemap?url=${encodeURIComponent(sitemapUrl)}`;
      console.log(`Fetching sitemap from: ${apiUrl}`);
 
     showSpinner(); // Show the spinner before starting the fetch operation
